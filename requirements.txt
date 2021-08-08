@@ -1,6 +1,2 @@
-charset-normalizer==2.0.4
-docutils==0.17.1
-idna==3.2
 Pillow==8.3.1
-Pygments==2.9.0
 tkScrolledFrame==1.0.4
