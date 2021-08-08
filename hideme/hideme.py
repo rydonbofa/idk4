@@ -1,7 +1,6 @@
 #!venv/bin/python3.9
 
 import subprocess
-import bs4
 import json
 
 
