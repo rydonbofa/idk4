@@ -58,7 +58,8 @@ def button_click(button, adress, buttons):
     if len(running) > 0:
         if adress.split(".")[0] == running[0].split("@")[1].split(".")[0]:
             stop_service()
-            set_background(buttons)
+            if len(get_running_services()) == 0:
+                set_background(buttons)
             return
             
     stop_service()
