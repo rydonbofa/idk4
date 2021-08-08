@@ -1,4 +1,3 @@
-#!/home/bastian/Dokumente/Scripts/hideme/venv/bin/python
 
 from tkinter import *
 import tkinter as tk
@@ -22,6 +21,7 @@ def read_servers():
         return json.load(f)["data"]
 
 def get_images():
+    os.mkdir(os.path.dirname(os.path.realpath(__file__))+"/images/")
     for item in read_servers():
         if not os.path.isfile(os.path.dirname(os.path.realpath(__file__))+"/images/"+item["image"].split("/")[-1]):
             urllib.request.urlretrieve(item["image"],os.path.dirname(os.path.realpath(__file__))+"/images/"+item["image"].split("/")[-1])
