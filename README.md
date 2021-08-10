@@ -36,5 +36,5 @@ rm master.zip
 python3 Hide.me-LinuxClient-master/hideme/app.py
 ```
 
-## Imgages
+## Images
 ![alt text](https://i.imgur.com/5kM1ata.png)
